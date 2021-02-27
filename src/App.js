@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Technologies from './Technologies';
-import Header from './Header';
+import Technologies from './Header';
+//import Header from './Header';
 
 const App = () => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Technologies />
     </div>
   );

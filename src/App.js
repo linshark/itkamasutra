@@ -1,13 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Technologies from './Header';
-//import Header from './Header';
+import Technologies from './Technologies';
+import Header from './Header';
+import Footer from './Footer';
+
 
 const App = () => {
   return (
     <div>
-      {/* <Header /> */}
+      <Header />
       <Technologies />
+      <Footer />
     </div>
   );
 }

@@ -1,16 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-import Technologies from './Technologies';
-import Header from './Header';
-import Footer from './Footer';
+
 
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Technologies />
-      <Footer />
+    <div className='app-wrapper'>
+      <header className='header'>
+        <img src='/img/logolotus.jpg'></img>
+      </header>
+      <nav className='nav'>
+        <div>
+          Profile
+        </div>
+        <div>Messages</div>
+      </nav>
+      <div className='content'>
+        Main content
+      </div>
     </div>
   );
 }

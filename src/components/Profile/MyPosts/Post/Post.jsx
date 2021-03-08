@@ -1,9 +1,9 @@
-import classes from './Post.module.css';
+import s from './Post.module.css';
 const Post = (props) => {
 
   console.log(props.message);
   
-    return <div className='item'>
+    return <div className={s.item}>
       <img src='/img/avatar.jpg'></img>
         {props.message}
             <div>

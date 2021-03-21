@@ -10,7 +10,8 @@ import {BrowserRouter, Route} from 'react-router-dom';
 
 const App = (props) => {
 
-  
+  //debugger;
+
 
   return (
     <BrowserRouter>
@@ -21,7 +22,7 @@ const App = (props) => {
           {/* <Route path='/profile' component={Profile} /> */}
           <Route path='/profile' render={ () => <Profile posts={props.posts} /> } />
           {/* <Route path='/dialogs' component={Dialogs} /> */}
-          <Route path='/dialogs' render={ () => <Dialogs /> } />
+          <Route path='/dialogs' render={ () => <Dialogs messages={props.messages} dialogs={props.dialogs} /> } />
           <Route path='/news' component={News} />
           <Route path='/music' component={Music} />
           <Route path='/settings' component={Settings} />

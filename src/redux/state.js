@@ -29,12 +29,14 @@ let store={
     sidebar:{}
   },
   getState(){
+    //debugger;
     return this._state;
   },
   _callSubscriber(){
     console.log('State was changed');
   },
   addPost(){
+    //debugger;
     let newPost = {
       id: 5,
       message: this._state.profilePage.newPostText,
